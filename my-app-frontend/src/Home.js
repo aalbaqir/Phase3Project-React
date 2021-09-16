@@ -1,6 +1,5 @@
 // Landing Page
 import React from 'react';
-//import { NavLink } from 'react-router-dom';
 
 
 function Home(props) {
@@ -10,7 +9,7 @@ function Home(props) {
         let mappedPics = props.prodsToRender.map(eachProd => {
             return(
                 <div className="card">
-                    <div className="prod-name">
+                    <div >
                         <h2 className="prod-name">{eachProd.name}</h2>
                         <h3>✨{eachProd.category}✨</h3>
                         <img src={eachProd.image} alt={eachProd.name}

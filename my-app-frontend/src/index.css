@@ -19,13 +19,13 @@ p {
   margin: 0 auto;
 }
 
-#header {
+/* #header {
   height: 75px;
   background: #FFFFFF;
   border-radius: 10px;
   border: 1px solid #ebebeb;
   margin: 5px;
-}
+} */
 
 #navigationwrap {
   width: 1000px;

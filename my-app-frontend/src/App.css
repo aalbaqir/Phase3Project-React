@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   background-color: pink;
+  padding-top: 100px;
+  /* padding-left: 1000px; */
+  /* padding-right: 1000px; */
+  padding-bottom: 500px;
 }
 
 /* .App-logo {
@@ -36,16 +40,9 @@
   }
 } */
 
-.prod-image{
-  width: 180px;
-  max-width: 400px;
-  position: relative;
 
-  
 
-}
-
-.center,.prod-image {
+.center {
   text-align: center;
   display: block;
   justify-content: center;
@@ -91,6 +88,14 @@ li {
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   padding: 60px;
   border-radius: 5px;
+  
+  object-fit: contain;
 
+}
 
+.pics {
+  max-width:100%;
+  height:auto;
+  /* max-height: 50px; */
+  /* object-fit: contain; */
 }
