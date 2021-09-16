@@ -3,16 +3,13 @@ body {
   font-size: 13px;
   color:#333
 }
-
 p {
   padding: 10px;
 }
-
 #wrapper {
   margin: 0 auto;
   width: 1000px;
 }
-
 #headerwrap {
   width: 1000px;
   float: left;
@@ -29,10 +26,19 @@ p {
 
 #navigationwrap {
   width: 1000px;
+
+    
+          
+            
+    
+
+          
+    
+    
+  
   float: left;
   margin: 0 auto;
 }
-
 #navigation {
   height: 40px;
   background: #D080FF;
@@ -40,26 +46,22 @@ p {
   border: 1px solid #bc6ceb;
   margin: 5px;
 }
-
 #contentwrap {
   width: 850px;
   float: left;
   margin: 0 auto;
 }
-
 #content {
   background: #FFFFFF;
   border-radius: 10px;
   border: 1px solid #ebebeb;
   margin: 5px;
 }
-
 #leftcolumnwrap {
   width: 150px;
   float: left;
   margin: 0 auto;
 }
-
 #leftcolumn {
   background: #D7A8FF;
   border-radius: 10px;
