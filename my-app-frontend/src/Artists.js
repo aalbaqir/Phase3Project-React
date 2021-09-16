@@ -18,7 +18,7 @@ function Artists(props){
 
                     <div className="pics">
 
-                         <img src={eachUser.artist_img} alt="Picture of: {eachProd.name}"
+                         <img src={eachUser.artist_img} alt="{eachProd.name}"
                              key={eachUser.id} className="center"
                         />
 

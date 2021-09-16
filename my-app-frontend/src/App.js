@@ -53,9 +53,29 @@ function App() {
           setUsers(fetchedUsers)
          
          });
-        }, []);
+        }, []); 
+
+        const deleteThisContent =(removeThisContent)=>{
+          console.log("Time To Go")
+
+          fetch(`http://localhost:9292/products/${removeThisContent.id}`, {
+
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(removeThisContent),
+
+          })
+           
+          .then(r => r.json())
+            .then(contentRemoved =>{console.log("here we are", contentRemoved) })
+            
+           const makeUpLeft = essMakeup.filter(eachProduct => eachProduct.id !=removeThisContent.id)
+
+            setEssMakeup( [...makeUpLeft] )
+
+        }
           
-    
+      
   return (
     <div className="App">
       
@@ -64,11 +84,13 @@ function App() {
       {/* <header className="App-header"> MakeUp For Coders </header> */}
       <Switch> 
 
-        <Route path= "/MyMakeup">
-           <Home 
+       <Route path= "/MyMakeup">
            
-           prodsToRender = {essMakeup}/>
-          </Route>
+           {essMakeup.map(eachProduct => {return <Home 
+           key={eachProduct.id} prodsToRender = {eachProduct}
+           deleteThisContent={deleteThisContent}/>})}
+        
+      </Route>
 
          <Route path="/Artists">
 
