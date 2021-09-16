@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
 
 
 function NavBar(){
@@ -12,16 +12,17 @@ function NavBar(){
             <h1>All Makeup Lovers, Welcome! </h1>
             <nav>
 
-            
             <NavLink className="button" to="./">
-                Home
+                Sign-Up! 
             </NavLink>
-            <NavLink className="button" to="./MakeUpEsssentials">
-                MakeUp Essentials
+            
+            <NavLink className="button" to="./MyMakeup">
+                My Makeup List
             </NavLink>
-            <NavLink className="button" to="./SuperGlam">
-                SuperGlam
+            <NavLink className="button" to="./Artists">
+                Artists
             </NavLink>
+
 
             </nav>
             </header>

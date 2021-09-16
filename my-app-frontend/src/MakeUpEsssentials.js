@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "./Home";
 
 
 function makeUpEssentials () { <>
@@ -9,7 +10,8 @@ function makeUpEssentials () { <>
 </>
 
     return (<>
-
+    
+    
  </>   )
 }
 
